@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Map Distance Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Map Distance Calculator</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container-fluid raleway">
+    <div class="row">
+      <div class="col-md-12" style="padding: 0;">
+        <div class="map-position">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <section id="locations">
+          <h3>Your Start And End Location</h3>
+          <div class="title-strips-over dark"></div>
+          <div class="form-group col-sm-12">
+            <label>
+              <i class="fa fa-play"></i> Start Location
+            </label>
+            <input placeholder="Eg. Okelewo, Abeokuta" id="start" type="text" class="form-control" required>
+          </div>
+          <div class="form-group col-sm-12">
+            <label>
+              <i class="fa fa-stop"></i> End Location</label>
+            <input placeholder="Eg. Quarry, Abeokuta" id="end" type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <button class="btn" onclick="calculate()" data-scroll>Calculate
+              <i class="fa fa-check"></i>
+            </button>
+          </div>
+        </section>
+      
+        
+        <section id="results">
+          <div id="warnings-panel"></div>
+          
+          <div id="total"></div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=insert-your-api-key-here"
+  type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+</body>
+</html>
