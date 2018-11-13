@@ -1,4 +1,4 @@
-# career-quest-live-chat
+# Google Maps Distance Calculator
 
 This app uses the google maps api to get location on the map to calculate the distance between two points and real time calculation by holding and dragging the marker to any point on the map. it is built using html, css and javascript 
 
